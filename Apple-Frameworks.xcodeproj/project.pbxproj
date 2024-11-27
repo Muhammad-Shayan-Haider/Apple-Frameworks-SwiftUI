@@ -75,10 +75,10 @@
 		E42157942CD5F81F00AA6B0E = {
 			isa = PBXGroup;
 			children = (
-				E421579F2CD5F81F00AA6B0E /* Apple-Frameworks */,
 				E42157B02CD5F82000AA6B0E /* Apple-FrameworksTests */,
 				E42157BA2CD5F82100AA6B0E /* Apple-FrameworksUITests */,
 				E421579E2CD5F81F00AA6B0E /* Products */,
+				E421579F2CD5F81F00AA6B0E /* Apple-Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
