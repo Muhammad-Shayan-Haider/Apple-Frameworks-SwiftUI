@@ -24,25 +24,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E421579D2CD5F81F00AA6B0E /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E42157AD2CD5F82000AA6B0E /* Apple-FrameworksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple-FrameworksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E42157B72CD5F82100AA6B0E /* Apple-FrameworksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple-FrameworksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E421579D2CD5F81F00AA6B0E /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Apple-Frameworks.app"; path = "/Users/Shayan/Documents/Personal/Apple-Frameworks/build/Debug-iphoneos/Apple-Frameworks.app"; sourceTree = "<absolute>"; };
+		E42157AD2CD5F82000AA6B0E /* Apple-FrameworksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Apple-FrameworksTests.xctest"; path = "/Users/Shayan/Documents/Personal/Apple-Frameworks/build/Debug-iphoneos/Apple-Frameworks.app/PlugIns/Apple-FrameworksTests.xctest"; sourceTree = "<absolute>"; };
+		E42157B72CD5F82100AA6B0E /* Apple-FrameworksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Apple-FrameworksUITests.xctest"; path = "/Users/Shayan/Documents/Personal/Apple-Frameworks/build/Debug-iphoneos/Apple-FrameworksUITests-Runner.app/PlugIns/Apple-FrameworksUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E421579F2CD5F81F00AA6B0E /* Apple-Frameworks */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Apple-Frameworks";
-			sourceTree = "<group>";
-		};
-		E42157B02CD5F82000AA6B0E /* Apple-FrameworksTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Apple-FrameworksTests";
-			sourceTree = "<group>";
-		};
-		E42157BA2CD5F82100AA6B0E /* Apple-FrameworksUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Apple-FrameworksUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,21 +65,8 @@
 		E42157942CD5F81F00AA6B0E = {
 			isa = PBXGroup;
 			children = (
-				E42157B02CD5F82000AA6B0E /* Apple-FrameworksTests */,
-				E42157BA2CD5F82100AA6B0E /* Apple-FrameworksUITests */,
-				E421579E2CD5F81F00AA6B0E /* Products */,
 				E421579F2CD5F81F00AA6B0E /* Apple-Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		E421579E2CD5F81F00AA6B0E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E421579D2CD5F81F00AA6B0E /* Apple-Frameworks.app */,
-				E42157AD2CD5F82000AA6B0E /* Apple-FrameworksTests.xctest */,
-				E42157B72CD5F82100AA6B0E /* Apple-FrameworksUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +107,6 @@
 			dependencies = (
 				E42157AF2CD5F82000AA6B0E /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				E42157B02CD5F82000AA6B0E /* Apple-FrameworksTests */,
-			);
 			name = "Apple-FrameworksTests";
 			packageProductDependencies = (
 			);
@@ -152,9 +126,6 @@
 			);
 			dependencies = (
 				E42157B92CD5F82100AA6B0E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E42157BA2CD5F82100AA6B0E /* Apple-FrameworksUITests */,
 			);
 			name = "Apple-FrameworksUITests";
 			packageProductDependencies = (
@@ -196,7 +167,7 @@
 			mainGroup = E42157942CD5F81F00AA6B0E;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = E421579E2CD5F81F00AA6B0E /* Products */;
+			productRefGroup = E42157942CD5F81F00AA6B0E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
