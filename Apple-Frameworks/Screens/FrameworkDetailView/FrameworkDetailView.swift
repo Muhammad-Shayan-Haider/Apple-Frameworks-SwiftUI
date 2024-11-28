@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     var framework: Framework
-    @Binding var isShowingDetailView: Bool
+    
     @State private var isShowingSafariView: Bool = false
     
     var body: some View {
@@ -38,5 +38,5 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.frameworks.first!, isShowingDetailView: .constant(false))
+    FrameworkDetailView(framework: MockData.frameworks.first!)
 }
