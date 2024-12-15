@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E421579D2CD5F81F00AA6B0E /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Apple-Frameworks.app"; path = "/Users/Shayan/Documents/Personal/Apple-Frameworks/build/Debug-iphoneos/Apple-Frameworks.app"; sourceTree = "<absolute>"; };
-		E42157AD2CD5F82000AA6B0E /* Apple-FrameworksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Apple-FrameworksTests.xctest"; path = "/Users/Shayan/Documents/Personal/Apple-Frameworks/build/Debug-iphoneos/Apple-Frameworks.app/PlugIns/Apple-FrameworksTests.xctest"; sourceTree = "<absolute>"; };
-		E42157B72CD5F82100AA6B0E /* Apple-FrameworksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Apple-FrameworksUITests.xctest"; path = "/Users/Shayan/Documents/Personal/Apple-Frameworks/build/Debug-iphoneos/Apple-FrameworksUITests-Runner.app/PlugIns/Apple-FrameworksUITests.xctest"; sourceTree = "<absolute>"; };
+		E40110B82D0ED0D80014B334 /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40110B92D0ED0D80014B334 /* Apple-FrameworksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple-FrameworksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40110BA2D0ED0D80014B334 /* Apple-FrameworksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple-FrameworksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -66,6 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				E421579F2CD5F81F00AA6B0E /* Apple-Frameworks */,
+				E40110B82D0ED0D80014B334 /* Apple-Frameworks.app */,
+				E40110B92D0ED0D80014B334 /* Apple-FrameworksTests.xctest */,
+				E40110BA2D0ED0D80014B334 /* Apple-FrameworksUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +94,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Apple-Frameworks";
-			productReference = E421579D2CD5F81F00AA6B0E /* Apple-Frameworks.app */;
+			productReference = E40110B82D0ED0D80014B334 /* Apple-Frameworks.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E42157AC2CD5F82000AA6B0E /* Apple-FrameworksTests */ = {
@@ -111,7 +114,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Apple-FrameworksTests";
-			productReference = E42157AD2CD5F82000AA6B0E /* Apple-FrameworksTests.xctest */;
+			productReference = E40110B92D0ED0D80014B334 /* Apple-FrameworksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		E42157B62CD5F82100AA6B0E /* Apple-FrameworksUITests */ = {
@@ -131,7 +134,7 @@
 			packageProductDependencies = (
 			);
 			productName = "Apple-FrameworksUITests";
-			productReference = E42157B72CD5F82100AA6B0E /* Apple-FrameworksUITests.xctest */;
+			productReference = E40110BA2D0ED0D80014B334 /* Apple-FrameworksUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */

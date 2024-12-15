@@ -8,35 +8,37 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
-    var framework: Framework
     
-    @State private var isShowingSafariView: Bool = false
+    @ObservedObject var viewModel: FrameworkDetailViewModel
     
     var body: some View {
         VStack {
             Spacer()
-            FrameworkTitleView(framework: framework)
-            Text(framework.description)
+            FrameworkTitleView(framework: viewModel.framework)
+            Text(viewModel.framework.description)
                 .font(.body)
                 .padding()
             Spacer()
-            Button {
-                isShowingSafariView = true
-            } label: {
-                // AFButton(titleString: "Learn More")
-                Label("Learn More", systemImage: "book.fill")
+            Link(destination: URL(string: viewModel.framework.urlString) ?? URL(string: "www.apple.com")!) {
+                AFButton(titleString: "Learn More")
             }
-            .buttonStyle(.bordered)
-            .controlSize(.large)
-            .buttonBorderShape(.roundedRectangle)
-            .tint(.red)
+//            Button {
+//                viewModel.isShowingSafariView = true
+//            } label: {
+//                // AFButton(titleString: "Learn More")
+//                Label("Learn More", systemImage: "book.fill")
+//            }
+//            .buttonStyle(.bordered)
+//            .controlSize(.large)
+//            .buttonBorderShape(.roundedRectangle)
+//            .tint(.red)
         }
-        .fullScreenCover(isPresented: $isShowingSafariView) {
-            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
-        }
+//        .fullScreenCover(isPresented: $viewModel.isShowingSafariView) {
+//            SafariView(url: URL(string: viewModel.framework.urlString) ?? URL(string: "www.apple.com")!)
+//        }
     }
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.frameworks.first!)
+    FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: MockData.sampleFramework, isShowingDetailView: .constant(false)))
 }

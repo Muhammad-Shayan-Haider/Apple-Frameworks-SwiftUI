@@ -27,7 +27,8 @@ struct FrameworkGridView: View {
             }
             .navigationTitle("Apple Frameworks")
             .navigationDestination(for: Framework.self) { framework in
-                FrameworkDetailView(framework: framework)
+                FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: framework,
+                                                                        isShowingDetailView: $viewModel.isShowingDetailView))
             }
         }
         .accentColor(Color(.label))
